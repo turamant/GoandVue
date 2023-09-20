@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Список пользователей</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Список пользователей</h1>
+    <ul class="user-list">
+      <li v-for="user in users" :key="user.name" class="user-item">
+        <div class="user-info">
+          <div class="user-name">{{ user.name }}</div>
+          <div class="user-age">{{ user.age }} лет</div>
+          <div class="user-phone">{{ user.phonenumber }}</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+
+ 
+
